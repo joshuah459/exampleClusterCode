@@ -1,0 +1,790 @@
+Sat 10 Apr 23:10:53 BST 2021
+Script Name: sizeSystem.py
+Number of Active Nodes for Execution: 5
+name childTwo reps 5 rem 0
+name childTwo reps 5 rem 0
+name childOne reps 5 rem 0
+name childTwo reps 5 rem 0
+name childThree reps 5 rem 0
+name childFour reps 5 rem 0
+name childFour reps 5 rem 0
+name childThree reps 5 rem 0
+name childThree reps 5 rem 0
+name childFour reps 5 rem 0
+name childTwo reps 5 rem 0
+name childFour reps 5 rem 0
+name childOne reps 5 rem 0
+name childOne reps 5 rem 0
+name childThree reps 5 rem 0
+name childOne reps 5 rem 0
+name masterNode reps 5 rem 0
+name masterNode reps 5 rem 0
+name masterNode reps 5 rem 0
+[[ 9 10  7  7  2  1  2  0 10  4  8  8  2  8  9  8  6  9  0  1]
+ [ 3  7  2  9  5  7  2  0  1  4  9  8  0  8 10  3  4  6  6  3]
+ [ 8  7  9  0  6  2  2  2  6  9  0  2  8  4  0  2  6  3  2  9]
+ [ 4  2  9  0 10  0  8 10  8  4  7  3  5  6 10  5  0  6  2  7]
+ [ 4 10  7  9  7 10  4  4  1  5  2  3  4  2  3  7 10 10 10  0]
+ [ 5  6  7  9  5  9  7  4  4  6  3  1  8  2  2  3  5  7 10  2]
+ [ 0  3  3  5  7  3  2  9  1  3  8  5  7 10  3  5  0  8  0 10]
+ [ 7  7  1  8  2  7  8  3  6  9  0  2  2  1  9  4  6  8  9  1]
+ [ 6  6  8  6  4  1 10  6 10  8  4  5  5  8  9  4  2  7  0  9]
+ [ 0  9  8  9  9  9  0  1  1 10  9  4  3  8  1  6  0  4  7  6]
+ [ 6  7  8  4  8  1  8  6  9  7  0 10  7  8  6 10  7  2  2  6]
+ [ 9  0  7  5  9  7  5 10 10  5  8  5  1  3  2  6 10  9  5  4]
+ [ 4  4  8  7  9  5  2  0  2 10  4  9  3  4  2  0 10  9 10  9]
+ [ 7  8  1  3  5  2  7  3  2  6 10  3  3  3  5  0  5  0  4  8]
+ [ 5  5  3 10  9  0  1  6  5  3  0  8  9  6  5  4 10  5  2  6]
+ [ 7  5  0  0  7  8  2  1  5  1 10  7  7  5  3  3  4  5 10  9]
+ [ 6  2  8  6  1  0  8  7  8  8 10 10  8  3  6  6  3  7  1  0]
+ [ 9  3  7  8  1  1  1  5  5  7  4  0  3  7  7  2 10  0  7  5]
+ [ 3  7  5  2  3  8  7  5  7  8  4  0  0  9  7  0  6  1  2  0]
+ [ 6  6  6  5  8 10  3  0  4  2  8  0  3  1  2  0  0  8 10  3]]
+[[ 5  7  0  2 10  6  4  7  8  9  0  2  3  8  2  6  5  6  0  2]
+ [ 5  5  9  8  0  2  1  7  4  5  8  2  6  2 10  9  1  4  9  5]
+ [ 3  1  6  2  2  1  5  8 10  3 10  7  2  5  8  8  4  4  5 10]
+ [ 6  9  1  0  7  9  1  7  2  4  1  3  6  1  6  8  2  2  8  8]
+ [10  4 10  2  5 10  3 10  7  3  6  5  9  5  4  8  1  3  4  6]
+ [ 8 10  6 10  5  0  3  5  1  1 10  3  8  4 10  0 10  4  1 10]
+ [ 7  5  1  7  6  0  0  3  0  5  5  3  8  9  1  7 10 10  3  9]
+ [ 5  8  6  0  0  5  8  2  2 10  8  7  0  0  4  0  5  6 10  1]
+ [ 2  0  7  3  0  1  0  2  1  3  2  6  3  6  2  9 10  1  8  3]
+ [ 2 10  1 10  8  8  0 10  5  6  4  1  7  0  0  1  1  1  2  1]
+ [ 8 10 10  0  5 10  8  2  9  2  7  6  8  9  1  2  8  9  6  9]
+ [ 6  8  5  6  0  5  3  3  0  3  9  6  9  6  9  6  2  3  1  7]
+ [ 2  5  7  3  4  9  9  1 10  6  7  9  0  1  1  6  1  7  8  6]
+ [ 7  2  7  9 10 10  2  6  9  3  8  8  6  4  3  2  3  5  2  0]
+ [ 2 10 10 10  6  7  9  9  4  9  1  9  6  0  5  7  4  7  4  8]
+ [ 8  2  9  0  0  2  8  8  2  0  1  3  4  2  7  8 10  2  8  5]
+ [ 9  6  4  2 10  2  2  6  6  5  3  9  9  3  7  5 10  4  8  7]
+ [ 8  4  7  3  3  3  3  3  0  1  0  5  7  1  8  7  7  7  6  2]
+ [ 5  3  5  4  5  0  2  4  0  0  7  4  2  5  3 10  3  7  6  7]
+ [ 0  4 10  8  1 10  2  1 10  8  7  8  0 10  8 10  2  9 10  6]]
+[[475 563 612 475 681 607 578 419 415 363 731 545 535 617 646 514 655 504
+  505 698]
+ [585 595 580 577 713 604 556 498 354 485 747 534 559 612 673 487 676 450
+  471 685]
+ [480 563 562 453 647 657 572 525 384 469 770 531 617 695 728 451 686 479
+  426 709]
+ [610 499 533 584 640 628 536 520 268 505 737 535 537 604 712 448 706 471
+  377 597]
+ [492 632 621 518 656 667 551 481 383 477 682 645 606 630 793 446 660 462
+  468 754]
+ [477 431 446 576 566 385 434 401 305 436 573 411 521 448 659 366 571 349
+  380 555]
+ [404 432 504 363 513 474 417 347 335 403 580 381 467 550 502 373 506 304
+  346 585]
+ [325 380 450 259 377 438 345 389 289 289 482 355 475 493 529 346 447 327
+  311 552]
+ [402 583 626 422 628 596 502 470 419 368 666 502 565 627 614 512 642 469
+  457 693]
+ [557 608 598 504 704 618 578 561 427 512 792 532 595 673 743 516 710 491
+  433 732]
+ [558 468 511 484 541 567 647 467 441 366 714 524 543 472 692 480 643 455
+  449 660]
+ [417 486 488 403 524 614 484 412 335 354 587 531 399 486 528 445 594 430
+  366 477]
+ [376 464 490 350 511 494 386 358 321 292 554 441 455 489 547 434 464 386
+  349 584]
+ [466 579 543 441 558 559 482 573 331 387 683 506 599 530 654 466 586 450
+  420 680]
+ [487 544 519 452 550 618 525 431 306 471 629 474 471 551 602 439 591 421
+  419 591]
+ [373 371 411 310 430 462 365 387 231 331 457 370 406 483 473 318 467 307
+  308 421]
+ [455 543 530 507 646 582 522 440 351 385 680 540 484 621 610 459 684 529
+  465 617]
+ [557 515 570 577 698 655 536 432 341 518 722 547 557 649 778 525 743 492
+  416 556]
+ [535 483 478 592 634 485 557 334 314 489 617 503 482 519 702 371 598 411
+  436 590]
+ [426 546 558 341 573 498 445 386 335 326 629 529 535 511 643 414 478 392
+  391 692]]
+name masterNode reps 5 rem 0
+rank 2 result 612
+rank 3 result 475
+rank 1 result 563
+rank 9 result 363
+rank 10 result 731
+rank 4 result 681
+rank 11 result 545
+rank 8 result 415
+rank 5 result 607
+rank 6 result 578
+rank 7 result 419
+rank 12 result 535
+rank 13 result 617
+rank 14 result 646
+rank 15 result 514
+rank 16 result 655
+rank 17 result 504
+rank 18 result 505
+rank 0 result 475
+rank 19 result 698
+[475, 563, 612, 475, 681, 607, 578, 419, 415, 363, 731, 545, 535, 617, 646, 514, 655, 504, 505, 698]
+rank 2 result 580
+rank 3 result 577
+rank 0 result 585
+rank 5 result 604
+rank 4 result 713
+rank 10 result 747
+rank 12 result 559
+rank 6 result 556
+rank 13 result 612
+rank 11 result 534
+rank 7 result 498
+rank 14 result 673
+rank 17 result 450
+rank 16 result 676
+rank 9 result 485
+rank 15 result 487
+rank 18 result 471
+rank 8 result 354
+rank 19 result 685
+rank 1 result 595
+[585, 595, 580, 577, 713, 604, 556, 498, 354, 485, 747, 534, 559, 612, 673, 487, 676, 450, 471, 685]
+rank 3 result 453
+rank 2 result 562
+rank 0 result 480
+rank 4 result 647
+rank 5 result 657
+rank 9 result 469
+rank 12 result 617
+rank 6 result 572
+rank 13 result 695
+rank 10 result 770
+rank 14 result 728
+rank 17 result 479
+rank 11 result 531
+rank 7 result 525
+rank 15 result 451
+rank 16 result 686
+rank 8 result 384
+rank 18 result 426
+rank 19 result 709
+rank 1 result 563
+[480, 563, 562, 453, 647, 657, 572, 525, 384, 469, 770, 531, 617, 695, 728, 451, 686, 479, 426, 709]
+rank 2 result 533
+rank 3 result 584
+rank 0 result 610
+rank 4 result 640
+rank 5 result 628
+rank 12 result 537
+rank 11 result 535
+rank 6 result 536
+rank 9 result 505
+rank 10 result 737
+rank 7 result 520
+rank 13 result 604
+rank 17 result 471
+rank 8 result 268
+rank 14 result 712
+rank 16 result 706
+rank 18 result 377
+rank 15 result 448
+rank 19 result 597
+rank 1 result 499
+[610, 499, 533, 584, 640, 628, 536, 520, 268, 505, 737, 535, 537, 604, 712, 448, 706, 471, 377, 597]
+rank 3 result 518
+rank 2 result 621
+rank 0 result 492
+rank 5 result 667
+rank 9 result 477
+rank 4 result 656
+rank 6 result 551
+rank 13 result 630
+rank 10 result 682
+rank 7 result 481
+rank 12 result 606
+rank 17 result 462
+rank 14 result 793
+rank 16 result 660
+rank 11 result 645
+rank 8 result 383
+rank 15 result 446
+rank 18 result 468
+rank 19 result 754
+rank 1 result 632
+[492, 632, 621, 518, 656, 667, 551, 481, 383, 477, 682, 645, 606, 630, 793, 446, 660, 462, 468, 754]
+rank 2 result 446
+rank 3 result 576
+rank 0 result 477
+rank 4 result 566
+rank 11 result 411
+rank 5 result 385
+rank 6 result 434
+rank 12 result 521
+rank 17 result 349
+rank 9 result 436
+rank 7 result 401
+rank 13 result 448
+rank 10 result 573
+rank 14 result 659
+rank 16 result 571
+rank 15 result 366
+rank 18 result 380
+rank 8 result 305
+rank 19 result 555
+rank 1 result 431
+[477, 431, 446, 576, 566, 385, 434, 401, 305, 436, 573, 411, 521, 448, 659, 366, 571, 349, 380, 555]
+rank 2 result 504
+rank 3 result 363
+rank 0 result 404
+rank 5 result 474
+rank 4 result 513
+rank 11 result 381
+rank 6 result 417
+rank 12 result 467
+rank 16 result 506
+rank 9 result 403
+rank 7 result 347
+rank 13 result 550
+rank 14 result 502
+rank 17 result 304
+rank 10 result 580
+rank 18 result 346
+rank 8 result 335
+rank 15 result 373
+rank 19 result 585
+rank 1 result 432
+[404, 432, 504, 363, 513, 474, 417, 347, 335, 403, 580, 381, 467, 550, 502, 373, 506, 304, 346, 585]
+rank 3 result 259
+rank 2 result 450
+rank 0 result 325
+rank 5 result 438
+rank 8 result 289
+rank 4 result 377
+rank 6 result 345
+rank 13 result 493
+rank 9 result 289
+rank 7 result 389
+rank 12 result 475
+rank 10 result 482
+rank 14 result 529
+rank 17 result 327
+rank 15 result 346
+rank 16 result 447
+rank 11 result 355
+rank 18 result 311
+rank 19 result 552
+rank 1 result 380
+[325, 380, 450, 259, 377, 438, 345, 389, 289, 289, 482, 355, 475, 493, 529, 346, 447, 327, 311, 552]
+rank 2 result 626
+rank 3 result 422
+rank 0 result 402
+rank 5 result 596
+rank 4 result 628
+rank 6 result 502
+rank 14 result 614
+rank 10 result 666
+rank 7 result 470
+rank 17 result 469
+rank 11 result 502
+rank 12 result 565
+rank 13 result 627
+rank 16 result 642
+rank 15 result 512
+rank 18 result 457
+rank 9 result 368
+rank 19 result 693
+rank 8 result 419
+rank 1 result 583
+[402, 583, 626, 422, 628, 596, 502, 470, 419, 368, 666, 502, 565, 627, 614, 512, 642, 469, 457, 693]
+rank 3 result 504
+rank 2 result 598
+rank 0 result 557
+rank 4 result 704
+rank 6 result 578
+rank 5 result 618
+rank 9 result 512
+rank 13 result 673
+rank 7 result 561
+rank 14 result 743
+rank 16 result 710
+rank 11 result 532
+rank 12 result 595
+rank 17 result 491
+rank 10 result 792
+rank 15 result 516
+rank 18 result 433
+rank 8 result 427
+rank 19 result 732
+rank 1 result 608
+[557, 608, 598, 504, 704, 618, 578, 561, 427, 512, 792, 532, 595, 673, 743, 516, 710, 491, 433, 732]
+rank 3 result 484
+rank 2 result 511
+rank 0 result 558
+rank 4 result 541
+rank 5 result 567
+rank 6 result 647
+rank 10 result 714
+rank 7 result 467
+rank 13 result 472
+rank 14 result 692
+rank 16 result 643
+rank 9 result 366
+rank 12 result 543
+rank 17 result 455
+rank 11 result 524
+rank 18 result 449
+rank 8 result 441
+rank 15 result 480
+rank 19 result 660
+rank 1 result 468
+[558, 468, 511, 484, 541, 567, 647, 467, 441, 366, 714, 524, 543, 472, 692, 480, 643, 455, 449, 660]
+rank 2 result 488
+rank 3 result 403
+rank 5 result 614
+rank 12 result 399
+rank 4 result 524
+rank 14 result 528
+rank 11 result 531
+rank 0 result 417
+rank 6 result 484
+rank 10 result 587
+rank 1 result 486
+rank 7 result 412
+rank 13 result 486
+rank 15 result 445
+rank 17 result 430
+rank 9 result 354
+rank 16 result 594
+rank 8 result 335
+rank 18 result 366
+rank 19 result 477
+[417, 486, 488, 403, 524, 614, 484, 412, 335, 354, 587, 531, 399, 486, 528, 445, 594, 430, 366, 477]
+rank 2 result 490
+rank 3 result 350
+rank 0 result 376
+rank 6 result 386
+rank 10 result 554
+rank 5 result 494
+rank 4 result 511
+rank 12 result 455
+rank 9 result 292
+rank 8 result 321
+rank 7 result 358
+rank 13 result 489
+rank 16 result 464
+rank 14 result 547
+rank 17 result 386
+rank 11 result 441
+rank 1 result 464
+rank 15 result 434
+rank 18 result 349
+rank 19 result 584
+[376, 464, 490, 350, 511, 494, 386, 358, 321, 292, 554, 441, 455, 489, 547, 434, 464, 386, 349, 584]
+rank 3 result 441
+rank 2 result 543
+rank 1 result 579
+rank 0 result 466
+rank 4 result 558
+rank 6 result 482
+rank 8 result 331
+rank 5 result 559
+rank 9 result 387
+rank 7 result 573
+rank 14 result 654
+rank 11 result 506
+rank 12 result 599
+rank 17 result 450
+rank 16 result 586
+rank 10 result 683
+rank 13 result 530
+rank 15 result 466
+rank 18 result 420
+rank 19 result 680
+[466, 579, 543, 441, 558, 559, 482, 573, 331, 387, 683, 506, 599, 530, 654, 466, 586, 450, 420, 680]
+rank 2 result 519
+rank 3 result 452
+rank 1 result 544
+rank 0 result 487
+rank 6 result 525
+rank 5 result 618
+rank 8 result 306
+rank 4 result 550
+rank 7 result 431
+rank 13 result 551
+rank 10 result 629
+rank 16 result 591
+rank 11 result 474
+rank 14 result 602
+rank 18 result 419
+rank 9 result 471
+rank 12 result 471
+rank 17 result 421
+rank 15 result 439
+rank 19 result 591
+[487, 544, 519, 452, 550, 618, 525, 431, 306, 471, 629, 474, 471, 551, 602, 439, 591, 421, 419, 591]
+rank 2 result 411
+rank 3 result 310
+rank 1 result 371
+rank 0 result 373
+rank 5 result 462
+rank 11 result 370
+rank 4 result 430
+rank 6 result 365
+rank 8 result 231
+rank 7 result 387
+rank 13 result 483
+rank 18 result 308
+rank 12 result 406
+rank 17 result 307
+rank 9 result 331
+rank 16 result 467
+rank 10 result 457
+rank 14 result 473
+rank 15 result 318
+rank 19 result 421
+[373, 371, 411, 310, 430, 462, 365, 387, 231, 331, 457, 370, 406, 483, 473, 318, 467, 307, 308, 421]
+rank 2 result 530
+rank 3 result 507
+rank 1 result 543
+rank 0 result 455
+rank 7 result 440
+rank 4 result 646
+rank 8 result 351
+rank 14 result 610
+rank 11 result 540
+rank 6 result 522
+rank 12 result 484
+rank 10 result 680
+rank 5 result 582
+rank 13 result 621
+rank 18 result 465
+rank 9 result 385
+rank 15 result 459
+rank 17 result 529
+rank 16 result 684
+rank 19 result 617
+[455, 543, 530, 507, 646, 582, 522, 440, 351, 385, 680, 540, 484, 621, 610, 459, 684, 529, 465, 617]
+rank 2 result 570
+rank 3 result 577
+rank 1 result 515
+rank 0 result 557
+rank 4 result 698
+rank 6 result 536
+rank 9 result 518
+rank 5 result 655
+rank 10 result 722
+rank 7 result 432
+rank 12 result 557
+rank 13 result 649
+rank 18 result 416
+rank 11 result 547
+rank 15 result 525
+rank 17 result 492
+rank 8 result 341
+rank 14 result 778
+rank 16 result 743
+rank 19 result 556
+[557, 515, 570, 577, 698, 655, 536, 432, 341, 518, 722, 547, 557, 649, 778, 525, 743, 492, 416, 556]
+rank 3 result 592
+rank 2 result 478
+rank 1 result 483
+rank 0 result 535
+rank 4 result 634
+rank 6 result 557
+rank 5 result 485
+rank 10 result 617
+rank 13 result 519
+rank 11 result 503
+rank 12 result 482
+rank 18 result 436
+rank 8 result 314
+rank 7 result 334
+rank 14 result 702
+rank 15 result 371
+rank 17 result 411
+rank 9 result 489
+rank 16 result 598
+rank 19 result 590
+[535, 483, 478, 592, 634, 485, 557, 334, 314, 489, 617, 503, 482, 519, 702, 371, 598, 411, 436, 590]
+rank 2 result 558
+rank 3 result 341
+rank 1 result 546
+rank 0 result 426
+rank 4 result 573
+rank 5 result 498
+rank 6 result 445
+rank 10 result 629
+rank 12 result 535
+rank 7 result 386
+rank 13 result 511
+rank 9 result 326
+rank 14 result 643
+rank 16 result 478
+rank 18 result 391
+rank 8 result 335
+rank 15 result 414
+rank 17 result 392
+rank 11 result 529
+rank 19 result 692
+[426, 546, 558, 341, 573, 498, 445, 386, 335, 326, 629, 529, 535, 511, 643, 414, 478, 392, 391, 692]
+Runtime: 1.311933741
+
+Sat 10 Apr 23:11:19 BST 2021
+Script Name: sizeSystem.py
+Number of Active Nodes for Execution: 1
+name masterNode reps 1 rem 0
+name masterNode reps 1 rem 0
+name masterNode reps 1 rem 0
+[[ 6  4  1  9]
+ [ 0  6 10  7]
+ [ 6  0  3  6]
+ [ 2  4  5  7]]
+[[8 6 3 2]
+ [3 9 8 0]
+ [9 9 1 8]
+ [6 5 0 5]]
+[[ 70  66  76  46]
+ [ 76  66 122  74]
+ [ 87 117 142  81]
+ [146 138 206 124]]
+name masterNode reps 1 rem 0
+rank 2 result 76
+rank 0 result 70
+rank 3 result 46
+rank 1 result 66
+[70, 66, 76, 46]
+rank 3 result 74
+rank 0 result 76
+rank 1 result 66
+rank 2 result 122
+[76, 66, 122, 74]
+rank 3 result 81
+rank 1 result 117
+rank 0 result 87
+rank 2 result 142
+[87, 117, 142, 81]
+rank 1 result 138
+rank 3 result 124
+rank 0 result 146
+rank 2 result 206
+[146, 138, 206, 124]
+Runtime: 1.156917805
+
+Sat 10 Apr 23:20:00 BST 2021
+Script Name: clean.py
+Number of Active Nodes for Execution: 1
+size 60 size/4 15
+Runtime: 22.219557013
+
+Sat 10 Apr 23:21:12 BST 2021
+Script Name: arrayscattery.py
+Number of Active Nodes for Execution: 1
+size 60 size/4 15
+Runtime: 22.118551861
+
+Sat 10 Apr 23:25:03 BST 2021
+Script Name: arrayMul.py
+Number of Active Nodes for Execution: 1
+recieing from master....
+recieing from master....
+recieing from master....
+[[ 6  1  3  6  4  2  0  8  5  0]
+ [ 7  2  0  8 10  4  5  5  7  7]
+ [ 5  5  2  0  5  6  1  4  0  4]
+ [ 9 10  8  1  3  4  0  5  3  5]
+ [ 3  3  2  0  9  8  0  9  0  4]
+ [ 4  8  8  9  9  6  7  4  5  5]
+ [ 8  4  4  6  6  7  1 10  1  7]
+ [ 8  7  2  1  3  6  4  4  8 10]
+ [ 1  0  8  3  4 10  0  7 10  1]
+ [ 2  3  7  0  2  2  1  6  6  3]]
+[[ 2  1  6  9  8  1  3  0 10  4]
+ [ 3  2  7 10  3  5  3  3  2  3]
+ [ 3  5  3 10  9  7  5  0  5  1]
+ [ 6  3  8  6 10 10  3  4  5  5]
+ [ 7  9  6  7  1  9  3  6  5 10]
+ [ 9  7  7  6  9  2  0  3  0  6]
+ [10  6  3  2  4  4  1  6  0  0]
+ [ 4  2  7  2  1  6  1  0 10  0]
+ [ 9  5 10  3  7  1  0  5  3  2]
+ [ 4  0  8  2  4 10  6 10  1  9]]
+[[200 242 260 292 334 263 219 136 238 281]
+ [180 233 234 277 284 200 147 118 169 277]
+ [234 204 236 277 297 171 108 176 141 247]
+ [ 86 116 176 193 241 137 158 132 120 165]
+ [222 210 303 352 335 279 217 186 248 276]
+ [279 215 285 341 303 226 169 217 236 286]
+ [ 25  70  83 117 151  74  86  60  64 133]
+ [290 233 311 366 354 302 218 193 272 311]
+ [176 149 176 234 325 182 167 171 176 226]
+ [156 191 211 254 287 201 167 103 182 278]]
+[[0 0 0 0 0 0 0 0 0 0]]
+sending with c:0....
+sending with c:1....
+sending with c:2....
+sending result:242 to master....
+sending with c:3....
+sending result:260 to master....
+sending result:200 to master....
+Runtime: 1.175189071
+
+Sat 10 Apr 23:25:23 BST 2021
+Script Name: arrayMul.py
+Number of Active Nodes for Execution: 5
+Sat 10 Apr 23:32:26 BST 2021
+Script Name: arrayMul.py
+Number of Active Nodes for Execution: 5
+Sat 10 Apr 23:32:40 BST 2021
+Script Name: arrayMul.py
+Number of Active Nodes for Execution: 1
+recieing from master....
+recieing from master....
+recieing from master....
+[[ 4  3  7  8  0  6  3  6  4  4]
+ [ 9 10  9  4  3  2  7  3  4  7]
+ [ 0  4  5 10  7  1  0  8  8  9]
+ [ 7  7  4  7  0  2  8  2  3  8]
+ [ 8  8  6  9  8  4  3  6  6  4]
+ [ 2  5 10  8  2  3  2  1  7  0]
+ [ 5  1  0  8  0  0  2  8  3  6]
+ [ 6  4 10  9  0  0  4  4  5 10]
+ [ 3  9  8 10  5  0  2  5  4  6]
+ [ 2  1  0  2  8  1  8  8  3  1]]
+[[ 3  3  2 10  0  5  0  4  0  4]
+ [ 4 10  5  4  3  4  4  0  9  7]
+ [ 9  9  5  6  9  0 10  2 10  1]
+ [ 2  4  5  8  2  8  4  3  3  7]
+ [ 4  7  0  1  7  8  6  8  2  9]
+ [ 2  9  4  0  9  0  7  7  0  9]
+ [ 6  9  7  0  5  3  1  2  0 10]
+ [10  5  7  4  9  3  7  1  4  8]
+ [10  4  6  0  1  4  6  9  8  3]
+ [ 9  8  5  9  0  8  0  1  3  5]]
+[[151 227 325 193 260 256 188 260 206 212]
+ [162 296 360 228 250 228 210 278 239 266]
+ [188 289 347 253 313 239 238 292 336 310]
+ [210 345 481 323 352 310 269 424 412 330]
+ [ 65 198 192 150 175 199 202 226 134 130]
+ [ 65  88 126  80 101  79 100 138  93 122]
+ [168 213 221 202 226 210 192 220 157 221]
+ [116 257 333 215 259 281 248 340 278 203]
+ [137 223 267 216 238 213 210 269 242 223]
+ [175 260 369 232 238 264 206 290 303 242]]
+[[0 0 0 0 0 0 0 0 0 0]]
+sending with c:0....
+sending with c:1....
+sending result:151 to master....
+sending with c:2....
+sending result:227 to master....
+sending with c:3....
+sending result:325 to master....
+Runtime: 1.186722275
+
+Sat 10 Apr 23:32:54 BST 2021
+Script Name: arrayMul.py
+Number of Active Nodes for Execution: 1
+recieing from master....
+recieing from master....
+recieing from master....
+[[ 4  5  3  4  5  0  2  3  7  8]
+ [ 6  3  3  4 10  3  7  0  5 10]
+ [ 2  5  6 10  0  9 10  7  8  3]
+ [ 3  7  3  1  0  9  8  6 10 10]
+ [10  0  7  9  4  7  7  0  9  2]
+ [ 2  8  9  4  1  5  5 10  0  7]
+ [ 5  8  3  9 10  3  9  1  2  5]
+ [ 1  3  5  8  8  7  6  0  8  9]
+ [ 8  9  4  5 10  3  2  6  9  7]
+ [ 4  2 10  2  4  5  5  0 10  3]]
+[[ 4  1  2  5  0  6  6  9  6  3]
+ [ 4  4  0  7  7  5  0  5  5  7]
+ [ 1  6  2  8  9  8  4  8  2  1]
+ [ 1  2  7  1  8  9  3  8  6  0]
+ [ 0  1  3  5  4  5  4  3  4  9]
+ [ 1  4 10  5 10  1  1  0  8  3]
+ [10  3  6  3  4 10  3  4  1  4]
+ [ 9  3  8  0  0  9  3  2  1  6]
+ [ 2  0  2  5  0  0  0  4  0  6]
+ [ 6  6  3  6 10  4 10 10  1  2]]
+[[152 214 222 202 168 246 182 137  55 268]
+ [251 195 229 227 188 196 243 217  79 260]
+ [213 254 262 264 242 234 275 248 113 282]
+ [231 201 281 312 193 274 263 224  77 369]
+ [240 211 237 220 171 188 194 164  66 332]
+ [210 234 290 262 218 264 228 182 121 302]
+ [240 241 324 282 237 285 276 235 118 384]
+ [158 134 161 187 129 162 199 182  50 131]
+ [267 336 314 279 273 351 286 233 172 375]
+ [302 292 337 267 214 225 306 247 126 378]]
+[[0 0 0 0 0 0 0 0 0 0]]
+sending with c:0....
+sending with c:1....
+sending result:152 to master....
+sending with c:2....
+sending result:214 to master....
+sending with c:3....
+sending result:222 to master....
+Runtime: 1.149193337
+
+Sat 10 Apr 23:33:39 BST 2021
+Script Name: arrayMuledit.py
+Number of Active Nodes for Execution: 1
+rank 3 recieving from master....
+rank 1 recieving from master....
+rank 2 recieving from master....
+[[2 3 4]
+ [8 9 0]
+ [6 0 8]]
+[[ 1 10  5]
+ [ 5  6  6]
+ [ 1 10  9]]
+[[112  94 136]
+ [ 93  69  93]
+ [ 44  68  76]]
+4
+0
+[[0 0 0]]
+rank 0 sending to dest 1....
+rank 0 receving from dest 1....
+rank 1 sending result 112 to master....
+rank 1 recieving from master....
+[[112   0   0]]
+rank 0 sending to dest 2....
+rank 0 receving from dest 2....
+rank 2 sending result 94 to master....
+rank 2 recieving from master....
+[[112  94   0]]
+rank 0 sending to dest 3....
+rank 0 receving from dest 3....
+rank 3 sending result 136 to master....
+rank 3 recieving from master....
+[[112  94 136]]
+4
+1
+[[0 0 0]]
+rank 0 sending to dest 1....
+rank 0 receving from dest 1....
+rank 1 sending result 93 to master....
+rank 1 recieving from master....
+[[93  0  0]]
+rank 0 sending to dest 2....
+rank 0 receving from dest 2....
+rank 2 sending result 69 to master....
+rank 2 recieving from master....
+[[93 69  0]]
+rank 0 sending to dest 3....
+rank 0 receving from dest 3....
+rank 3 sending result 93 to master....
+rank 3 recieving from master....
+[[93 69 93]]
+4
+2
+[[0 0 0]]
+rank 0 sending to dest 1....
+rank 0 receving from dest 1....
+rank 1 sending result 44 to master....
+[[44  0  0]]
+rank 0 sending to dest 2....
+rank 0 receving from dest 2....
+rank 2 sending result 68 to master....
+[[44 68  0]]
+rank 0 sending to dest 3....
+rank 0 receving from dest 3....
+rank 3 sending result 76 to master....
+[[44 68 76]]
+Runtime: 1.166730289
+
